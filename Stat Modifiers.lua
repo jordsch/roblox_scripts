@@ -57,7 +57,7 @@ humanoid.JumpPower = 75 -- how high you want the person to jump. default jump he
 
 
 userInput.InputBegan:connect(function(input)
-	--if input.UserInputType == Enum.UserInputType.Keyboard then --I commented this out cause idk why we would need this, since its not like a controller can input leftshift.
+	--if input.UserInputType == Enum.UserInputType.Keyboard then --I commented this out cause a controller cannot input left shift.
 	if input.KeyCode == Enum.KeyCode.Space and (jumps < maxjumps) then
 		humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
 		jumps = (jumps+1)
