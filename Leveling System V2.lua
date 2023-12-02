@@ -46,7 +46,7 @@ game.Players.PlayerAdded:Connect(function(Player)  --Loading Data For Players/Cr
 
 
 	
-	local experiencePlaceHolder -- made it so subtracting xp from current xp doesnt fucking recurse through the next function
+	local experiencePlaceHolder -- made it so subtracting xp from current xp doesnt recurse through the next function
 
 	
 	stats.Experience.Changed:Connect(function(val)
